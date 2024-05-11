@@ -196,16 +196,16 @@
             <div class="col-12">
                 <ul class="pagination justify-content-center me-auto ms-auto mt-5 mb-0 mb-sm-10">
                     <li class="page-item">
-                        <a class="page-link previous" href="?p=shop&s=<?= $row['ID'] ?>" aria-label="Previous">
+                        <a class="page-link previous" href="?p=shop&s=5" aria-label="Previous">
                             <span class="fa fa-chevron-left" aria-hidden="true"></span>
                         </a>
                     </li>
-                    <li class="page-item"><a class="page-link" href="?p=shop">01</a></li>
-                    <li class="page-item"><a class="page-link" href="?p=shop">02</a></li>
-                    <li class="page-item"><a class="page-link" href="?p=shop">03</a></li>
-                    <li class="page-item"><a class="page-link" href="?p=shop">....</a></li>
+                    <li class="page-item"><a class="page-link" href="?p=shop&s=10">01</a></li>
+                    <li class="page-item"><a class="page-link" href="?p=shop&s=15">02</a></li>
+                    <li class="page-item"><a class="page-link" href="?p=shop&s=20">03</a></li>
+                    <li class="page-item"><a class="page-link" href="?p=shop&s=25">....</a></li>
                     <li class="page-item">
-                        <a class="page-link next" href="?p=shop" aria-label="Next">
+                        <a class="page-link next" href="?p=shop&s=30" aria-label="Next">
                             <span class="fa fa-chevron-right" aria-hidden="true"></span>
                         </a>
                     </li>
