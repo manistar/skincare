@@ -1,4 +1,5 @@
 <?php
+// $data = [];
 if (isset($_GET['id'])) {
     // Sanitize the input
     $userID = htmlspecialchars($_GET['id']);

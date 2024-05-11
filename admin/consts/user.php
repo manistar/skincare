@@ -1,18 +1,4 @@
 <?php
-// require_once "include/ini-users.php";
-
-// if (isset($_GET['id'])) {
-//     // Sanitize the input
-//     $userID = htmlspecialchars($_GET['id']);
-
-//     // Fetch user details based on the user ID
-//     $data = $d->getall("users", "ID = ?", [$userID], fetch: "details");
-// }
-
-
-
-// htmlspecialchars($_SESSION['adminSession']);
-
 $user_validating = [
     "email" => [
         "title" => "Email",
@@ -40,23 +26,10 @@ $user_validating = [
         "type" => "input",
         "icon" => '<span class="fas fa-lock"></span>' 
     ],
-
-    // "password" => [
-    //     "title" => "Password",
-    //     "global_class" => "col-md-12 mb-1",
-    //     "id" => "user-password",
-    //     "name"=> "password",
-    //     // "class"=> "fas fa-lock",
-    //     "description" => '<a href="forgot.html"><strong style="font-weight: 900;">Forgot Password ?</strong></a>',
-    //     "is_required" => true,
-    //     "input_type" => "password",
-    //     "type" => "input",
-    //     "icon" => '<span class="fas fa-lock"></span>' // Add this line for the icon
-    // ],
-    
 ];
 
 $screen_locked = [
+    "ID" => ["input_type"=>"hidden", "is_required"=>false],
     "email" => [
         "title" => "Email",
         "global_class" => "col-md-12",
@@ -153,16 +126,6 @@ $user_registration = [
         "input_type"=>"password",
         "type" => "input"
     ],
-    // "confirm_password" => [
-    //     "title" => "Password",
-    //     "global_class" => "col-md-12",
-    //     "name"=> "password",
-    //     "placeholder" => "Confirm your password",
-    //     "is_required" => true,
-    //     "input_type"=>"password",
-    //     "type" => "input"
-    // ],
-    // "input_data"=>["userID"=>uniqid()],
 ];
 
 

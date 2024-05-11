@@ -1,6 +1,12 @@
 <?php
 // session_start();
-require_once "inis/ini.php"; 
+// require_once "inis/ini.php"; 
+
+$page = "dashboard";
+        if(isset($_GET['p'])) {
+            $page = htmlspecialchars($_GET['p']);
+        }
+
 if(isset($_POST['page'])) {
     $pageexclude = "yes";
     $page = htmlspecialchars($_POST['page']);

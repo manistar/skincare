@@ -12,15 +12,23 @@ require_once 'consts/product-edit.php';
 require_once 'consts/blog-edit.php';
 require_once "content/content.php";
 require_once "function/autorize.php";
-
 require 'function/content.php';
 // require_once "function/home.php";
+require_once 'function/staffs.php';
+
+// 
+require_once "consts/user.php";
+require_once "function/shop.php";
+require_once "function/home.php";
+// 
+
+
 // $b = new bar;
 $d = new database; 
 $v = new validate;
 // $s = new shop;
 $c = new content;
-// $staff = new staffs;
+$staff = new staffs;
 $content = new web_content;
 // $userID = "";
 $date = date('Y-m-d');

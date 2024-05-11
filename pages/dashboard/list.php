@@ -342,4 +342,14 @@
                 ?>
             </div>
         </div>
-        <div class="sec
+        <div class="section-space pb-0">
+                        <!--== Start Product Category Item ==-->
+                        <a href="?p=shop" class="product-banner-item">
+                            <img src="upload/price.jpeg" style="width: 500; height: 200 !important;"  alt="Image-HasTech">
+                        </a>
+                        <!--== End Product Category Item ==-->
+                    </div>
+    </section>
+
+
+</main>
