@@ -89,7 +89,7 @@ $pads = $d->getall("products", "userID = ? order by date DESC LIMIT 8", [$userID
 // var_dump($pads);
 
 $Tfeedbacks= $d->getall("products", "feed_status = ?", ['1'], fetch: "");
-$Tadmins = $d->getall("admins", fetch: "");
+$Tadmins = $d->getall("admins", "status = ?", ['1'], fetch: "");
 $Tcontact = $d->getall("contact", fetch: "");
 
 
