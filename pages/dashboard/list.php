@@ -81,7 +81,8 @@
                         <div class="col-sm-6 col-lg-4">
                             <!--== Start Product Category Item ==-->
                             <a href="?p=shop" class="product-banner-item">
-                            <img src="upload/banner/<?= $row['upload_images']; ?>" style="width: 350px; height: 370px !important;" alt="Image-HasTech">
+                                <img src="upload/banner/<?= $row['upload_images']; ?>"
+                                    style="width: 350px; height: 250px !important;" alt="Image-HasTech">
                             </a>
                             <!--== End Product Category Item ==-->
                         </div>
@@ -122,13 +123,15 @@
                             <div class="product-item product-st2-item">
                                 <div class="product-thumb">
                                     <a class="d-block" href="?p=product-details&ID=<?= $row['ID'] ?>">
-                                    <img src="upload/products/<?= $row['upload_image']; ?>" style="width: 350px; height: 400px !important;" alt="Image-HasTech">
+                                        <img src="upload/products/<?= $row['upload_image']; ?>"
+                                            style="width: 350px; height: 400px !important;" alt="Image-HasTech">
                                     </a>
                                     <span class="flag-new">new</span>
                                 </div>
                                 <div class="product-info">
                                     <div class="product-rating"></div>
-                                    <h4 class="title"><a href="?p=product-details&ID=<?= $row['ID'] ?>"><?= $row['title']; ?></a></h4>
+                                    <h4 class="title"><a
+                                            href="?p=product-details&ID=<?= $row['ID'] ?>"><?= $row['title']; ?></a></h4>
                                     <div class="prices">
                                         <span class="price"><?= $row['price']; ?>gh</span>
                                         <span class="price-old"><?= $row['old_price']; ?>gh</span>
@@ -137,10 +140,17 @@
                                         <button type="button" class="product-action-btn action-btn-cart">
                                             <a href="?p=payment"><span>Buy Now</span></a>
                                         </button>
-                                        <button type="button" class="product-action-btn action-btn-quick-view"
-                                            data-bs-toggle="modal" data-bs-target="#action-QuickViewModal">
-                                            <i class="fa fa-expand fa-lg"></i> <!-- Adjusted icon size -->
+                                        <!-- <button type="button" class="product-action-btn action-btn-quick-view"
+                                            onclick="loadProductData(<?= $product_id; ?>)">
+                                            <i class="fa fa-expand fa-lg"></i>
+                                        </button> -->
+
+                                        <button type="button" class="product-action-btn action-btn-quick-view">
+                                            <a href="?p=product-details&ID=<?= $row['ID'] ?>">
+                                            <i class="fa fa-expand fa-eye"></i> 
+                                            </a>
                                         </button>
+
                                         <button type="button" class="product-action-btn action-btn-wishlist">
                                             <a href="https://wa.me/233551468920/?text=Hi,%20I%20got%20your%20number%20from%20your%20website,%20how%20much%20is%20this%20<?= $row['title']; ?>%20product?"
                                                 class="envelope-link">
@@ -149,20 +159,17 @@
                                         </button>
                                     </div>
                                     <div class="product-action-bottom">
-                                        <button type="button" class="product-action-btn action-btn-quick-view"
-                                            data-bs-toggle="modal" data-bs-target="#action-QuickViewModal">
-                                            <i class="fa fa-expand fa-lg"></i> <!-- Adjusted icon size -->
+                                        <button type="button" class="product-action-btn action-btn-quick-view">
+                                            <a href="?p=product-details&ID=<?= $row['ID'] ?>">
+                                            <i class="fa fa-expand fa-eye">View</i> 
+                                            </a>
                                         </button>
                                         <button type="button" class="product-action-btn action-btn-wishlist">
-                                            <a
-                                                href="https://wa.me/233551468920/?text=Hi,%20I%20got%20your%20number%20from%20your%20website,%20how%20much%20is%20this%20<?= $row['title']; ?>%20product?">
+                                            <a href="https://wa.me/233551468920/?text=Hi,%20I%20got%20your%20number%20from%20your%20website,%20how%20much%20is%20this%20<?= $row['title']; ?>%20product?">
                                                 <i class="fa fa-envelope envelope-icon"></i> <!-- Adjusted icon size -->
                                             </a>
                                         </button>
-                                        <button type="button" class="product-action-btn action-btn-cart" data-bs-toggle="modal"
-                                            data-bs-target="#action-CartAddModal">
-                                            <span>Add to cart</span>
-                                        </button>
+                                       
                                     </div>
                                 </div>
                             </div>
@@ -212,7 +219,7 @@
                                 <div class="product-thumb">
                                     <a class="d-block" href="?p=video_product-details&ID=<?= $row['ID'] ?>">
                                         <div
-                                            style="position: relative; overflow: hidden; width: 100%; padding-top: 56.25%; height: 450px;">
+                                            style="position: relative; overflow: hidden; width: 300px; padding-top: 56.25%; height: 450px;">
                                             <video autoplay muted loop
                                                 style="position: absolute; top: 0; left: 0; width: 100%;">
                                                 <source src="upload/products/video/<?= $row['upload_video']; ?>"
@@ -222,12 +229,16 @@
                                         <span class="flag-new">new</span>
                                     </a>
                                 </div>
+                                
                                 <div class="product-info">
+                                    
                                     <div class="product-action">
-                                        <!-- <button type="button" class="product-action-btn action-btn-quick-view"
-                                            data-bs-toggle="modal" data-bs-target="#action-QuickViewModal">
-                                            <i class="fa fa-expand"></i>
-                                        </button> -->
+                                    <button type="button" class="product-action-btn action-btn-quick-view">
+                                            <a href="?p=video_product-details&ID=<?= $row['ID'] ?>">
+                                            <i class="fa fa-expand fa-eye"></i> 
+                                            </a>
+                                        </button>
+
                                         <button type="button" class="product-action-btn action-btn-wishlist">
                                             <a
                                                 href="https://wa.me/233551468920/?text=Hi,%20I%20got%20your%20number%20from%20your%20website,%20how%20much%20is%20this%20<?= $row['title']; ?>%20product?">
@@ -236,20 +247,24 @@
                                         </button>
                                     </div>
                                     <div class="product-action-bottom">
-                                        <button type="button" class="product-action-btn action-btn-quick-view"
+                                        <!-- <button type="button" class="product-action-btn action-btn-quick-view"
                                             data-bs-toggle="modal" data-bs-target="#action-QuickViewModal">
                                             <i class="fa fa-expand"></i>
+                                        </button> -->
+
+                                        <button type="button" class="product-action-btn action-btn-quick-view">
+                                            <a href="?p=video_product-details&ID=<?= $row['ID'] ?>">
+                                            <i class="fa fa-expand fa-eye">View</i> 
+                                            </a>
                                         </button>
+
                                         <button type="button" class="product-action-btn action-btn-wishlist">
                                             <a
                                                 href="https://wa.me/233551468920/?text=Hi,%20I%20got%20your%20number%20from%20your%20website,%20how%20much%20is%20this%20<?= $row['title']; ?>%20product?">
                                                 <i class="fa fa-envelope envelope-icon"></i>
                                             </a>
                                         </button>
-                                        <button type="button" class="product-action-btn action-btn-cart" data-bs-toggle="modal"
-                                            data-bs-target="#action-CartAddModal">
-                                            <span>Add to cart</span>
-                                        </button>
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -313,19 +328,21 @@
                 </div>
             </div>
             <div class="row mb-n9">
-                <?php 
+                <?php
                 if ($blog->rowCount() > 0) {
                     foreach ($blog as $row) {
                         ?>
                         <div class="col-sm-6 col-lg-4 mb-8">
                             <!--== Start Blog Item ==-->
                             <div class="post-item">
-                                <a href="?p=blog-details&ID=<?=$row['ID'];?>" class="thumb">
-                                <img src="upload/blog/<?= $row['upload_image']; ?>" style="width: 350px; height: 370px !important;" alt="Image-HasTech">
+                                <a href="?p=blog-details&ID=<?= $row['ID']; ?>" class="thumb">
+                                    <img src="upload/blog/<?= $row['upload_image']; ?>"
+                                        style="width: 350px; height: 370px !important;" alt="Image-HasTech">
                                 </a>
                                 <div class="content">
                                     <a class="post-category" href="?p=blog">beauty</a>
-                                    <h4 class="title"><a href="?p=blog-details&ID=<?=$row['ID'];?>"><?= $row['title'] ?></a></h4>
+                                    <h4 class="title"><a href="?p=blog-details&ID=<?= $row['ID']; ?>"><?= $row['title'] ?></a>
+                                    </h4>
                                     <ul class="meta">
                                         <li class="author-info"><span>By:</span> <a href="?p=blog"><?= $row['fname'] ?></a></li>
                                         <li class="post-date"><?= $row['date'] ?></li>
@@ -343,12 +360,12 @@
             </div>
         </div>
         <div class="section-space pb-0">
-                        <!--== Start Product Category Item ==-->
-                        <a href="?p=shop" class="product-banner-item">
-                            <img src="upload/price.jpeg" style="width: 500; height: 200 !important;"  alt="Image-HasTech">
-                        </a>
-                        <!--== End Product Category Item ==-->
-                    </div>
+            <!--== Start Product Category Item ==-->
+            <a href="?p=shop" class="product-banner-item">
+                <img src="upload/price.jpeg" style="width: 500; height: 200 !important;" alt="Image-HasTech">
+            </a>
+            <!--== End Product Category Item ==-->
+        </div>
     </section>
 
 

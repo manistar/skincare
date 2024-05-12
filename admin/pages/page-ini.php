@@ -1,6 +1,6 @@
 <?php
 // require_once "consts/Regex.php";
-$accepted_actions = ['list', "view", "feedback", "edit"];
+$accepted_actions = ['list', "lists", "view", "feedback", "edit"];
 $action = "list";
 if (isset($_GET['action'])) {
     $action = htmlspecialchars($_GET['action']);

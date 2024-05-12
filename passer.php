@@ -16,10 +16,7 @@ if(isset($_POST["send_message"])){
     require_once "inis/ini.php";
     echo $v->contact_server($contact_us);
 }
-if(isset($_POST["send_feedback"])){
-    require_once "inis/ini.php";
-    echo $v->feedback_server($feed_back);
-}
+
 if(isset($_POST["enter_message"])){
     require_once "inis/ini.php";
     echo $v->blogs_comment($blog_comment);

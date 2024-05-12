@@ -95,7 +95,7 @@
                             <div class="col-lg-6">
                                 <!--== Start Product Thumbnail Area ==-->
                                 <div class="product-single-thumb">
-                                    <img src="assets/images/shop/quick-view1.webp" width="544" height="560"
+                                    <img src="upload/products/<?=$product_data['upload_image'];?>" width="544" height="560"
                                         alt="Image-HasTech">
                                 </div>
                                 <!--== End Product Thumbnail Area ==-->
@@ -104,32 +104,20 @@
                                 <!--== Start Product Info Area ==-->
                                 <div class="product-details-content">
                                     <h5 class="product-details-collection">Premioum collection</h5>
-                                    <h3 class="product-details-title">Offbline Instant Age Rewind Eraser.</h3>
-                                    <div class="product-details-review mb-5">
-                                        <div class="product-review-icon">
-                                            <i class="fa fa-star-o"></i>
-                                            <i class="fa fa-star-o"></i>
-                                            <i class="fa fa-star-o"></i>
-                                            <i class="fa fa-star-o"></i>
-                                            <i class="fa fa-star-half-o"></i>
-                                        </div>
-                                        <button type="button" class="product-review-show">150 reviews</button>
-                                    </div>
-                                    <p class="mb-6">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus,
-                                        repellendus. Nam voluptate illo ut quia non sapiente provident alias quos
-                                        laborum incidunt, earum accusamus, natus. Vero pariatur ut veniam sequi amet
-                                        consectetur.</p>
+                                    <h3 class="product-details-title"><?=$product_data['title'];?></h3>
+                               
+                                    <p class="mb-6"><?=$product_data['content'];?></p>
                                     <div class="product-details-pro-qty">
                                         <div class="pro-qty">
                                             <input type="text" title="Quantity" value="01">
                                         </div>
                                     </div>
                                     <div class="product-details-action">
-                                        <h4 class="price">$254.22</h4>
-                                        <div class="product-details-cart-wishlist">
+                                        <h4 class="price"><?=$product_data['price'];?></h4>
+                                        <!-- <div class="product-details-cart-wishlist">
                                             <button type="button" class="btn" data-bs-toggle="modal"
                                                 data-bs-target="#action-CartAddModal">Add to cart</button>
-                                        </div>
+                                        </div> -->
                                     </div>
                                 </div>
                                 <!--== End Product Info Area ==-->
@@ -188,61 +176,36 @@
     <div class="offcanvas-body">
         <div id="offcanvasNav" class="offcanvas-menu-nav">
             <ul>
-                <li class="offcanvas-nav-parent"><a class="offcanvas-nav-item" href="#">home</a>
-                    <ul>
-                        <li><a href="index.html">Home One</a></li>
-                        <li><a href="index-two.html">Home Two</a></li>
-                    </ul>
+                <li class="offcanvas-nav-parent"><a class="offcanvas-nav-item" href="?p=dashboard">home</a>
+                    <!--<ul>-->
+                    <!--    <li><a href="index.html">Home One</a></li>-->
+                    <!--    <li><a href="index-two.html">Home Two</a></li>-->
+                    <!--</ul>-->
                 </li>
-                <li class="offcanvas-nav-parent"><a class="offcanvas-nav-item" href="about-us.html">about</a></li>
-                <li class="offcanvas-nav-parent"><a class="offcanvas-nav-item" href="#">shop</a>
-                    <ul>
-                        <li><a href="#" class="offcanvas-nav-item">Shop Layout</a>
-                            <ul>
-                                <li><a href="product.html">Shop 3 Column</a></li>
-                                <li><a href="product-four-columns.html">Shop 4 Column</a></li>
-                                <li><a href="product-left-sidebar.html">Shop Left Sidebar</a></li>
-                                <li><a href="product-right-sidebar.html">Shop Right Sidebar</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#" class="offcanvas-nav-item">Single Product</a>
-                            <ul>
-                                <li><a href="product-details-normal.html">Single Product Normal</a></li>
-                                <li><a href="product-details.html">Single Product Variable</a></li>
-                                <li><a href="product-details-group.html">Single Product Group</a></li>
-                                <li><a href="product-details-affiliate.html">Single Product Affiliate</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#" class="offcanvas-nav-item">Others Pages</a>
-                            <ul>
-                                <li><a href="product-cart.html">Shopping Cart</a></li>
-                                <li><a href="product-checkout.html">Checkout</a></li>
-                                <li><a href="product-wishlist.html">Wishlist</a></li>
-                                <li><a href="product-compare.html">Compare</a></li>
-                            </ul>
-                        </li>
-                    </ul>
+                <li class="offcanvas-nav-parent"><a class="offcanvas-nav-item" href="?p=about">about</a></li>
+                <li class="offcanvas-nav-parent"><a class="offcanvas-nav-item" href="?p=shop">shop</a>
+       
                 </li>
-                <li class="offcanvas-nav-parent"><a class="offcanvas-nav-item" href="#">Blog</a>
-                    <ul>
-                        <li><a class="offcanvas-nav-item" href="#">Blog Layout</a>
-                            <ul>
-                                <li><a href="blog.html">Blog Grid</a></li>
-                                <li><a href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
-                                <li><a href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="blog-details.html">Blog Details</a></li>
-                    </ul>
+                <li class="offcanvas-nav-parent"><a class="offcanvas-nav-item" href="?p=blog">Blog</a>
+                    <!--<ul>-->
+                    <!--    <li><a class="offcanvas-nav-item" href="#">Blog Layout</a>-->
+                    <!--        <ul>-->
+                    <!--            <li><a href="blog.html">Blog Grid</a></li>-->
+                    <!--            <li><a href="blog-left-sidebar.html">Blog Left Sidebar</a></li>-->
+                    <!--            <li><a href="blog-right-sidebar.html">Blog Right Sidebar</a></li>-->
+                    <!--        </ul>-->
+                    <!--    </li>-->
+                    <!--    <li><a href="blog-details.html">Blog Details</a></li>-->
+                    <!--</ul>-->
                 </li>
-                <li class="offcanvas-nav-parent"><a class="offcanvas-nav-item" href="#">Pages</a>
-                    <ul>
-                        <li><a href="account-login.html">My Account</a></li>
-                        <li><a href="faq.html">Frequently Questions</a></li>
-                        <li><a href="page-not-found.html">Page Not Found</a></li>
-                    </ul>
-                </li>
-                <li class="offcanvas-nav-parent"><a class="offcanvas-nav-item" href="contact.html">Contact</a></li>
+                <!--<li class="offcanvas-nav-parent"><a class="offcanvas-nav-item" href="#">Pages</a>-->
+                <!--    <ul>-->
+                <!--        <li><a href="account-login.html">My Account</a></li>-->
+                <!--        <li><a href="faq.html">Frequently Questions</a></li>-->
+                <!--        <li><a href="page-not-found.html">Page Not Found</a></li>-->
+                <!--    </ul>-->
+                <!--</li>-->
+                <li class="offcanvas-nav-parent"><a class="offcanvas-nav-item" href="?p=contact">Contact</a></li>
             </ul>
         </div>
     </div>

@@ -1,3 +1,4 @@
+<?php require_once "ini.php";?>
 <main class="main-content">
 
     <!--== Start Page Header Area Wrapper ==-->
@@ -53,16 +54,16 @@
                         <div class="col-12">
                             <ul class="pagination justify-content-center me-auto ms-auto mt-7 mb-8 mb-xl-0">
                                 <li class="page-item">
-                                    <a class="page-link previous" href="product.html" aria-label="Previous">
+                                    <a class="page-link previous" href="?p=blog&s=5" aria-label="Previous">
                                         <span class="fa fa-chevron-left" aria-hidden="true"></span>
                                     </a>
                                 </li>
-                                <li class="page-item"><a class="page-link" href="product.html">01</a></li>
-                                <li class="page-item"><a class="page-link" href="product.html">02</a></li>
-                                <li class="page-item"><a class="page-link" href="product.html">03</a></li>
-                                <li class="page-item"><a class="page-link" href="product.html">....</a></li>
+                                <li class="page-item"><a class="page-link" href="?p=blog&s=10">01</a></li>
+                                <li class="page-item"><a class="page-link" href="?p=blog&s=15">02</a></li>
+                                <li class="page-item"><a class="page-link" href="?p=blog&s=20">03</a></li>
+                                <li class="page-item"><a class="page-link" href="?p=blog&s=25">....</a></li>
                                 <li class="page-item">
-                                    <a class="page-link next" href="product.html" aria-label="Next">
+                                    <a class="page-link next" href="?p=blog&s=30" aria-label="Next">
                                         <span class="fa fa-chevron-right" aria-hidden="true"></span>
                                     </a>
                                 </li>

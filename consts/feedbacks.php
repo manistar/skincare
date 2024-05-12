@@ -28,11 +28,11 @@ $feed_back = [
         "input_type" => "email",
         "type" => "input"
     ],
-    "upload_image" => [
+    "profile_image" => [
         "is_required" => false,
         "input_type" => "file",
-        "path" => "../upload/profile/",
-        "file_name" => "products_" . uniqid(),
+        "path" => "upload/profile/",
+        "file_name" => "profile_" . uniqid(),
         "format" => ["jpeg", "jpg", "png"]
     ],
 ]; 

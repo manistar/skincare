@@ -20,6 +20,7 @@ if(isset($_GET['p'])) {
 $product = $d->getall("products", "status = ?",['0'],  fetch: "moredetails");
 $product_video = $d->getall("products", "status =?", ["1"], fetch: "moredetails");
 $banners = $d->getall("friday_discount", fetch: "moredetails");
+
 $blog = $d->getall("blog", "status = ?", ["1"], fetch: "moredetails");
 $comment_data = $d->getall("blog", "status = ?", ["0"], fetch: "moredetails");
 $product_related = $d->getall("products", "label = ?", ["natural"], fetch: "moredetails");

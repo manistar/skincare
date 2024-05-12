@@ -1,4 +1,4 @@
-<?php require_once 'inis/ini.php'; ?>
+<?php require_once 'ini.php'; ?>
  <!-- Content Wrapper. Contains page content -->
  <div class="content-wrapper">
 

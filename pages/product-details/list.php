@@ -167,7 +167,7 @@
                                     <button type="submit" class="btn">SUBMIT</button>
                                 </div>
                             </form> -->
-                            <form action="passer" id="foo">
+                            <form action="passer?p=product-details" id="foo">
                                 <?= $c->create_form($feed_back); ?>
                                 <input type="hidden" name="send_feedback" value="">
                                 <div id="custommessage"></div>
